@@ -1,0 +1,227 @@
+.heading {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(1, 1, 1);
+    margin-top: 20px;
+}
+
+.title {
+    margin: 0px;
+    font-weight: normal;
+}
+
+.small-element {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    margin: 10px;
+}
+
+.big-element {
+    display: block;
+    font-size: 120px;
+    line-height: 0.85;
+    font-family: "Beaufort for LOL", serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    font-style: italic;
+}
+
+.hero-title {
+    display: block;
+    padding: 0px 15px 10px;
+    margin-bottom: -10px;
+}
+
+.description {
+    max-width: 460px;
+    padding: 0px 10%;
+    margin: 12px auto 0px;
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+}
+
+#champions-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.item>* {
+    margin-bottom: 6px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    clip-path: polygon(90% 0, 100% 7%, 100% 100%, 0 100%, 0 0);
+}
+
+.card:hover {
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+}
+
+.card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(1.1);
+    transition: inherit;
+    object-fit: cover;
+
+}
+
+.card:hover img {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #061c25;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    transition: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.card:hover span {
+    padding: 10px 30px;
+    background: #006680;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    align-items: center;
+    border-bottom: 1px solid #d7cfcf;
+    border-top: 1px solid #d7cfcf;
+    color: black;
+    font-size: 20px;
+
+}
+
+.rolesBar {
+    display: inline-block;
+    margin: 10px;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    border-right: 2.5px solid #d7cfcf;
+}
+
+.difficulties {
+    display: inline-block;
+    margin: 10px;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    border-right: 2.5px solid #d7cfcf;
+}
+
+select {
+    width: 200px;
+    height: 31px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    color: hsl(0, 0%, 50%)
+}
+
+select .options {
+    margin: auto;
+}
+
+.searchBar {
+    display: flex;
+    margin: 10px;
+    flex-grow: 1;
+    border-right: 2.5px solid #d7cfcf;
+}
+
+#search {
+    width: 80%;
+    border: 3px solid #d7cfcf;
+    border-right: none;
+    padding: 5px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: hsl(0, 0%, 50%);
+    font-style: italic;
+    font-weight: 600;
+}
+
+#search:focus {
+    color: black;
+}
+
+#searchButton {
+    width: 40px;
+    height: 36px;
+    border: 3px solid #d7cfcf;
+    background: #fff;
+    text-align: center;
+    color: #f1d654;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.favs {
+    display: inline-block;
+    margin: 10px;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+h2 {
+    color: hsl(0, 0%, 50%);
+    text-align: center;
+}
+
+#favorites {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

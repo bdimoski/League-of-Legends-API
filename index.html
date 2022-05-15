@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="title">
+            <span class="small-element">
+                <div>
+                    <span class="subtitle"> CHOOSE YOUR</span>
+                </div>
+            </span>
+            <strong class="big-element">
+                <div>
+                    <span class="hero-title"> CHAMPION</span>
+                </div>
+            </strong>
+        </h1>
+    </div>
+    <p class="description">
+        With more than 140 champions, you'll find the perfect match for your playstyle. Master one, or master them all.
+    </p>
+
+    <nav class="navigation">
+        <div class="searchBar">
+            <input type="search" name="search" id="search" placeholder="SEARCH">
+            <button id="searchButton"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="rolesBar">
+            <label for="select"></label>
+            <select name="roles" id="roles"></select>
+        </div>
+        <div class="difficulties">
+            <label for="select"></label>
+            <select name="difficulties" id="difficulties" onchange="changeDifficulty() "></select>
+        </div>
+        <button class="favs" onclick="goToFavorites()">⭐</button>
+
+    </nav>
+
+    <div id="champions-container"></div>
+
+    <h2>Favorites</h2>
+    <div id="favorites"></div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
